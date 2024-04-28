@@ -1,0 +1,5 @@
+bases:
+  - ../../app
+patchesStrategicMerge:
+  - rs_count.yaml
+

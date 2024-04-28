@@ -1,0 +1,15 @@
+bases:
+- ../../base
+
+namespace: dev
+
+replicas:  
+- name: mywebapp  
+  count: 2
+
+#patches:
+#- path: ./replicas.yaml     
+
+configMapGenerator:
+- name: mykustom-map
+  env: config.properties

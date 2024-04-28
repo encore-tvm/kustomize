@@ -1,0 +1,16 @@
+
+resources: 
+- deploy.yaml
+- service.yaml
+
+images: 
+- name: nginx
+  newName: my.image.registry/nginx
+  newTag: 1.4.0
+
+commonLabels:
+  app: mywebapp
+
+commonAnnotations:
+  app: mykustom-annontations  
+

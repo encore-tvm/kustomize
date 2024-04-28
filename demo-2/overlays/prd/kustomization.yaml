@@ -1,0 +1,17 @@
+bases:
+- ../../base
+
+namespace: prd
+
+replicas:  
+- name: mywebapp  
+  count: 3
+
+#patches:
+#- path: ./replicas.yaml     
+
+configMapGenerator:
+- name: mykustom-map
+  files:
+  - config.properties        
+  #env: config.properties
